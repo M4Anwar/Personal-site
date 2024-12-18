@@ -1,0 +1,128 @@
+
+    body {
+      background-color: rgb(129, 116, 160); /* Darker blue */
+      margin: 0;
+      font-family: "Merriweather", serif;
+      color: #e3f2fd; /* Light blue text */
+    }
+
+    h1 {
+      font-size: 5.625rem;
+      margin: 50px auto 0 auto;
+      font-family: "Sacramento", cursive;
+      color: #d4ebf8; /* Lighter blue heading */
+    }
+
+    h2 {
+      font-family: "Merriweather", serif; /* Use Merriweather for h2 */
+      font-size: 2.5rem;
+      font-weight: 700; /* Bold weight */
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      color: #11c5cb;
+      font-family: "Merriweather", serif;  /* Use Merriweather for h3 */
+      font-weight: 400; /* Normal weight */
+
+    }
+
+    p {
+      line-height: 1.6; /* Improved readability */
+      font-size: 1rem; /* Make paragraphs a bit larger */
+
+    }
+
+    a {
+      color: #e38e49;
+      font-family: "Merriweather", serif;
+      margin: 10px 20px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #eaf6f6;
+    }
+
+    .top-container {
+      padding-top: 100px;
+      text-align: center; /* Center content in top container */
+    }
+
+
+    .hero-image {
+      max-width: 700px;
+      width: 90%; /* Make image responsive */
+      height: auto;
+      margin: 20px auto; /* Center image */
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    }
+
+    .middle-container {
+      background-color: #f5f5f5; /* Off-white background */
+      padding: 100px 0;
+      color: #333; /* Darker text for contrast */
+    }
+
+    .profile, .Skills, .Cooking  { /* Common styles for sections */
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .profile img, .Skills img, .Cooking img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover; /* Ensure image fills circle */
+      margin: 20px auto; /* Center images */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Add shadow to images */
+    }
+
+
+    .Skills .parent {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        gap: 30px;  /* Spacing between grid items */
+        width: 80%; /* Make content responsive */
+        margin: 0 auto; /* Center content */
+        text-align: left;
+      }
+
+    @media (min-width: 768px) { /* Two-column layout on larger screens */
+        .Skills .parent {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    .Skills .coding, .Skills .Cooking {
+      text-align: left; /* Align text left in two-column layout */
+      padding-left: 50px;
+    }
+    }
+
+
+    .bottom-container {
+      background-color: #0a3981; /* Darker blue for footer */
+      padding: 50px 0 20px;
+      text-align: center; /* Center footer content */
+      color: #e3f2fd; /* Light text color for footer */
+
+
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e38e49;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+    }
+
+    .btn:hover {
+      background-color: #d47a36; /* Darker orange on hover */
+    }
+
+  
